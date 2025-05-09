@@ -1,34 +1,31 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"zhao":
+  - firstname: ["Zihao", "Z."]
+    url: https://zhaozh10.github.io/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"wang":
+  - firstname: ["Sheng", "S."]
+    url: http://shengwang.link/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"wang":
+  - firstname: ["Qian", "Q."]
+    url: https://qianwang.space/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"zhao":
+  - firstname: ["Xiangyu", "X."]
+    url: https://hsiangyuzhao.github.io/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"shen":
+  - firstname: ["Zhenrong", "Z."]
+    url: https://zhenrongshen.github.io/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"cui":
+  - firstname: ["Zhiming", "Z."]
+    url: https://shanghaitech-impact.github.io/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"shen":
+  - firstname: ["Dinggang", "D."]
+    url: https://idea.bme.shanghaitech.edu.cn/main.htm
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"xu":
+  - firstname: ["Mengjie", "M."]
+    url: https://xum007.github.io/

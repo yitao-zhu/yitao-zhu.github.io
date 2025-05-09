@@ -48,9 +48,9 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title" style="font-size: 22px; font-family: 'Times New Roman', Times, serif;">{{ entry.title }}</div>
     <!-- Author -->
-    <div class="author">
+    <div class="author" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
       {% assign author_array_size = entry.author_array | size %}
 
       {% assign author_array_limit = author_array_size %}
@@ -85,13 +85,13 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <em style="color: #2798ba; font-weight: bold;">
             {{- author.first }}
             {{ author_last_html -}}
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">
+            <a href="{{ coauthor_url }}" style="color: inherit; text-decoration: none;">
               {{- author.first }}
               {{ author_last_html -}}
             </a>
@@ -178,10 +178,20 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
+
+    <!-- Journal Title and Date Styling -->
+    <div class="periodical" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+      <span style="font-style: italic;">
+        {{ entrytype }}
+      </span>
+      {% if entrytype_text != "" and entryyear != "" %}, {% endif %}
+      <span style="font-style: normal;">
+        {{ entrymonth }}{{ entryyear }}
+      </span>
     </div>
-    <div class="periodical">
+
+    <!-- Additional note if any -->
+    <div class="periodical" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
       {{ entry.note | strip }}
     </div>
 
