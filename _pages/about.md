@@ -17,7 +17,7 @@ social: false # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit:  # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -27,7 +27,7 @@ latest_posts:
 
 #### About
 
-I am currently pursuing a Master's degree in Computer Science at ShanghaiTech University, under the supervision of Prof. [Qian Wang (王乾)](https://qianwang.space/). I also earned my Bachelor’s degree in Computer Science from the same institution. In the next phase of my academic journey, I will join The Hong Kong Polytechnic University to pursue a Ph.D. under the guidance of Prof. [Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc).
+I am currently pursuing a Master's degree in Computer Science at ShanghaiTech University, under the supervision of [Prof. Qian Wang (王乾)](https://qianwang.space/). I also earned my Bachelor’s degree in Computer Science from the same institution. In the next phase of my academic journey, I will join The Hong Kong Polytechnic University to pursue a Ph.D. under the guidance of [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc).
 
 #### Research
 
