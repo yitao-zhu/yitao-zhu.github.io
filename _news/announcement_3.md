@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper accepted by AAAI 2025 and selected for oral presentation.
+One paper accepted by <i>AAAI</i> 2025 and selected for oral presentation.

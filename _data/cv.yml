@@ -1,8 +1,11 @@
 - title: General Information
-  type: map
+  type: map_media
+  media: assets/img/Scrounger.gif        # 你的 GIF 路径（站内相对路径或 URL）
+  media_alt: "Profile animation"
+  media_width: 4                       # 右侧列宽(12栅格制)，可改 3/4/5
   contents:
     - name: Full Name
-      value: Yitao Zhu (朱一涛)
+      value: Yitao ZHU (朱一涛)
     - name: Contact
       value: yitao.zh@outlook.com
     - name: Languages
@@ -16,6 +19,12 @@
 - title: Education
   type: time_table
   contents:
+    - title: Ph.D. in Health Technology and Informatics (expected)
+      institution: The Hong Kong Polytechnic University, Hong Kong
+      year: 2025.09 - Present
+      description:
+        - Advised by <a href="https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc">Prof. Anqi Qiu</a>
+        - Research field is multimodal large language models (MLLMs) for medical image analysis
     - title: M.S. in Computer Science
       institution: ShanghaiTech University, Shanghai, China
       year: 2022.09 - 2025.06

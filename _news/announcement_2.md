@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper accepted by IEEE TMI.
+One paper accepted by <i>IEEE TMI</i>.

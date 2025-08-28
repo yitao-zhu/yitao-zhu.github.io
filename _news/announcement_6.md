@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper accepted by MICCAI 2025, early accepted (top 9%). 
+One paper accepted by <i>MICCAI</i> 2025, early accepted (top 9%). 

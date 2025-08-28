@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper accepted by Neural Networks.
+One paper accepted by <i>Neural Networks</i>.

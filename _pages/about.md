@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.png
+  image: Animal_Friend.gif
   image_circular: false # crops the image to make it circular
   more_info: >
     <p></p>
@@ -27,7 +27,7 @@ latest_posts:
 
 #### About
 
-I am currently pursuing a Master's degree in Computer Science at ShanghaiTech University, under the supervision of [Prof. Qian Wang (王乾)](https://qianwang.space/). I also earned my Bachelor’s degree in Computer Science from the same institution. In the next phase of my academic journey, I will join The Hong Kong Polytechnic University to pursue a Ph.D. under the guidance of [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc).
+I am currently a Ph.D. student at The Hong Kong Polytechnic University, supervised by [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc). I received my M.S. in Computer Science from ShanghaiTech University in 2025, advised by [Prof. Qian Wang (王乾)](https://qianwang.space/), and my B.S. in Computer Science from the same institution in 2022.
 
 #### Research
 

@@ -37,6 +37,8 @@ layout: default
                 {% include cv/list.liquid %}
               {% elsif entry.type == 'map' %}
                 {% include cv/map.liquid %}
+              {% elsif entry.type == 'map_media' %}
+                {% include cv/map_media.liquid entry=entry %}
               {% elsif entry.type == 'nested_list' %}
                 {% include cv/nested_list.liquid %}
               {% elsif entry.type == 'time_table' %}

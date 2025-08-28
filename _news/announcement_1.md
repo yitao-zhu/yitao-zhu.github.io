@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two papers accepted by ISBI 2024, one selected for oral presentation. 
+Two papers accepted by <i>ISBI</i> 2024, one selected for oral presentation. 
