@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
-nav: false
-nav_order: 3
+title: Gallery
+permalink: /gallery/
+description: Photography is the eye that observes the world
+nav: true
+nav_order: 5
 display_categories: [work, fun]
 horizontal: false
 ---

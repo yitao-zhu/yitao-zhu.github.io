@@ -270,7 +270,7 @@ let determineComputedTheme = () => {
     if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
       return "dark";
     } else {
-      return "light";
+      return "dark";
     }
   } else {
     return themeSetting;
