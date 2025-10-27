@@ -23,12 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-curriculum-vitae",
-          title: "Curriculum Vitae",
+        },{id: "nav-cv",
+          title: "CV",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
+          },
+        },{id: "nav-gallery",
+          title: "Gallery",
+          description: "Photography is the eye that observes the world",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
