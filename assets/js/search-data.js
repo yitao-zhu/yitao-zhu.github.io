@@ -60,9 +60,9 @@ ninja.data = [{
           section: "News",},{id: "news-one-paper-accepted-by-miccai-2025-early-accepted-top-9",
           title: 'One paper accepted by MICCAI 2025, early accepted (top 9%).',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-shanghai",
+          title: 'Shanghai',
+          description: "Koda Gold 200 (2021.3.28)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
