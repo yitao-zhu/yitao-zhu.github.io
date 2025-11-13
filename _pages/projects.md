@@ -5,7 +5,7 @@ permalink: /gallery/
 description: Photography is the eye that observes the world
 nav: true
 nav_order: 5
-display_categories: [work, fun]
+display_categories: [2021, 2022]
 horizontal: false
 ---
 

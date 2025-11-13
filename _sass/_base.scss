@@ -583,6 +583,42 @@ footer.sticky-bottom {
   }
 }
 
+:root {
+  /* 亮度调节：数值越大光越强，默认 1 */
+  --neon-brightness: 0.2;
+}
+
+.neon-name {
+  color: #ffffff;
+
+  /* 所有光晕层都乘以亮度系数 */
+  text-shadow:
+    0 0 calc(4px * var(--neon-brightness)) #00eaff,
+    0 0 calc(8px * var(--neon-brightness)) #00eaff,
+    0 0 calc(12px * var(--neon-brightness)) #00eaff,
+    0 0 calc(22px * var(--neon-brightness)) #00eaff,
+    0 0 calc(45px * var(--neon-brightness)) #00eaff,
+    0 0 calc(80px * var(--neon-brightness)) #00eaff;
+
+  animation: neon-flicker 2.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0%   { opacity: 1; }
+  5%   { opacity: 0.85; }
+  10%  { opacity: 1; }
+  15%  { opacity: 0.9; }
+  22%  { opacity: 1; }
+  28%  { opacity: 0.75; }
+  35%  { opacity: 1; }
+  45%  { opacity: 0.88; }
+  52%  { opacity: 1; }
+  60%  { opacity: 0.95; }
+  70%  { opacity: 1; }
+  85%  { opacity: 0.82; }
+  100% { opacity: 1; }
+}
+
 .post-list {
   margin: 0;
   margin-bottom: 40px;
