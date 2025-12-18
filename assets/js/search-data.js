@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-gallery",
-          title: "Gallery",
-          description: "Photography is the eye that observes the world",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/gallery/";
-          },
         },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
@@ -45,8 +38,8 @@ ninja.data = [{
             },},{id: "news-two-papers-accepted-by-isbi-2024-one-selected-for-oral-presentation",
           title: 'Two papers accepted by ISBI 2024, one selected for oral presentation.',
           description: "",
-          section: "News",},{id: "news-one-paper-accepted-by-ieee-tmi",
-          title: 'One paper accepted by IEEE TMI.',
+          section: "News",},{id: "news-one-paper-accepted-by-ieee-transactions-on-medical-imaging",
+          title: 'One paper accepted by IEEE Transactions on Medical Imaging.',
           description: "",
           section: "News",},{id: "news-one-paper-accepted-by-aaai-2025-and-selected-for-oral-presentation",
           title: 'One paper accepted by AAAI 2025 and selected for oral presentation.',
