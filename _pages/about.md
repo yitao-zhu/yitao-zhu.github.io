@@ -25,10 +25,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-#### About
+**Yitao (一涛)** is a Ph.D. student at The HK PolyU, supervised by [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc). He received his M.S. in Computer Science from ShanghaiTech University in 2025, supervised by [Prof. Qian Wang (王乾)](https://qianwang.space/), and his B.S. in Computer Science from the same institution in 2022.
 
-I am currently a Ph.D. student at The Hong Kong Polytechnic University, supervised by [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc). I received my M.S. in Computer Science from ShanghaiTech University in 2025, advised by [Prof. Qian Wang (王乾)](https://qianwang.space/), and my B.S. in Computer Science from the same institution in 2022.
+Now, he focus on 🧑‍💻
+- Accurate & Reasonable Multimodal Large Language Model.
+- Vision Foundation Model for Medical Image Analysis.
+- Balance Work & Life ...
 
-#### Research
+He has published serveral papers about medical image and computer vision with total <a href='https://scholar.google.com/citations?user=UR1eH9cAAAAJ'><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FAbsterZhu%2FAbsterZhu.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> citations.
 
-My current research focuses on multimodal large language models (MLLMs) for medical image analysis, leveraging MLLMs to enable more reliable and naturally interactive computer-aided diagnosis (CAD), report generation, and medical image synthesis. Previously, I have also worked extensively in natural image processing, including multi-view object tracking and 3D human reconstruction. I have published serveral papers about medical image and computer vision with total <a href='https://scholar.google.com/citations?user=UR1eH9cAAAAJ'><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FAbsterZhu%2FAbsterZhu.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+

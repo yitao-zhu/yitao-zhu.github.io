@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper accepted by <i>IEEE TMI</i>.
+One paper accepted by <i>IEEE Transactions on Medical Imaging</i>.

@@ -11,7 +11,6 @@
   arxiv={2304.01097},
   code={https://github.com/xionghonglin/DoctorGLM},
   selected={false},
-  preview={doctorglm.png},
   abstract={The recent progress of large language models (LLMs), including ChatGPT and GPT-4, in comprehending and responding to human instructions has been remarkable. Nevertheless, these models typically perform better in English and have not been explicitly trained for the medical domain, resulting in suboptimal precision in diagnoses, drug recommendations, and other medical advice. Additionally, training and deploying a dialogue model is still believed to be impossible for hospitals, hindering the promotion of LLMs. To tackle these challenges, we have collected databases of medical dialogues in Chinese with ChatGPT's help and adopted several techniques to train an easy-deploy LLM. Remarkably, we were able to fine-tune the ChatGLM-6B on a single A100 80G in 13 hours, which means having a healthcare-purpose LLM can be very affordable. DoctorGLM is currently an early-stage engineering attempt and contain various mistakes. },
 }
 
@@ -26,7 +25,6 @@
   arxiv={2305.15964},
   code={https://github.com/zhaozh10/ChatCAD},
   selected={false},
-  preview={chatcad.png},
   abstract={The integration of Computer-Aided Diagnosis (CAD) with Large Language Models (LLMs) presents a promising frontier in clinical applications, notably in automating diagnostic processes akin to those performed by radiologists and providing consultations similar to a virtual family doctor. Despite the promising potential of this integration, current works face at least two limitations: (1) From the perspective of a radiologist, existing studies typically have a restricted scope of applicable imaging domains, failing to meet the diagnostic needs of different patients. Also, the insufficient diagnostic capability of LLMs further undermine the quality and reliability of the generated medical reports. (2) Current LLMs lack the requisite depth in medical expertise, rendering them less effective as virtual family doctors due to the potential unreliability of the advice provided during patient consultations. To address these limitations, we introduce ChatCAD+, to be universal and reliable. Specifically, it is featured by two main modules: (1) Reliable Report Generation and (2) Reliable Interaction. The Reliable Report Generation module is capable of interpreting medical images from diverse domains and generate high-quality medical reports via our proposed hierarchical in-context learning. Concurrently, the interaction module leverages up-to-date information from reputable medical websites to provide reliable medical advice. Together, these designed modules synergize to closely align with the expertise of human medical professionals, offering enhanced consistency and reliability for interpretation and advice.}
 }
 
@@ -41,7 +39,6 @@
   abbr={ISBI},
   arxiv={2406.05974},
   selected={false},
-  preview={inter.png},
   abstract={In clinical practice, 2D magnetic resonance (MR) sequences are widely adopted. While individual 2D slices can be stacked to form a 3D volume, the relatively large slice spacing can pose challenges for both image visualization and subsequent analysis tasks, which often require isotropic voxel spacing. To reduce slice spacing, deep-learning-based super-resolution techniques are widely investigated. However, most current solutions require a substantial number of paired high-resolution and low-resolution images for supervised training, which are typically unavailable in real-world scenarios. In this work, we propose a self-supervised super-resolution framework for inter-slice super-resolution of MR images. Our framework is first featured by pre-training on video dataset, as temporal correlation of videos is found beneficial for modeling the spatial relation among MR slices. Then, we use public high-quality MR dataset to fine-tune our pre-trained model, for enhancing awareness of our model to medical data. Finally, given a target dataset at hand, we utilize self-supervised fine-tuning to further ensure our model works well with user-specific super-resolution tasks. The proposed method demonstrates superior performance compared to other self-supervised methods and also holds the potential to benefit various downstream applications.}
 }
 
@@ -56,7 +53,6 @@
   abbr={ISBI (oral)},
   arxiv={2311.08236},
   selected={true},
-  preview={melo.png},
   code={https://github.com/JamesQFreeman/LoRA-ViT},
   abstract={The common practice in developing computer-aided diagnosis (CAD) models based on transformer architectures usually involves fine-tuning from ImageNet pre-trained weights. However, with recent advances in large-scale pre-training and the practice of scaling laws, Vision Transformers (ViT) have become much larger and less accessible to medical imaging communities. Additionally, in real-world scenarios, the deployments of multiple CAD models can be troublesome due to problems such as limited storage space and time-consuming model switching. To address these challenges, we propose a new method MeLo (Medical image Low-rank adaptation), which enables the development of a single CAD model for multiple clinical tasks in a lightweight manner. It adopts low-rank adaptation instead of resource-demanding fine-tuning. By fixing the weight of ViT models and only adding small low-rank plug-ins, we achieve competitive results on various diagnosis tasks across different imaging modalities using only a few trainable parameters. Specifically, our proposed method achieves comparable performance to fully fine-tuned ViT models on four distinct medical imaging datasets using about 0.17% trainable parameters. Moreover, MeLo adds only about 0.5MB of storage space and allows for extremely fast model switching in deployment and inference.}
 }
@@ -73,7 +69,6 @@
   abbr={AAAI (oral)},
   arxiv={2403.05055v1},
   selected={true},
-  preview={muc.png},
   code={https://github.com/AbsterZhu/MUC},
   abstract={Multiple cameras can provide comprehensive multi-view video coverage of a person. Fusing this multi-view data is crucial for tasks like behavioral analysis, although it traditionally requires camera calibration, a process that is often complex. Moreover, previous studies have overlooked the challenges posed by self-occlusion under multiple views and the continuity of human body shape estimation. In this study, we introduce a method to reconstruct the 3D human body from multiple uncalibrated camera views. Initially, we utilize a pre-trained human body encoder to process each camera view individually, enabling the reconstruction of human body models and parameters for each view along with predicted camera positions. Rather than merely averaging the models across views, we develop a neural network trained to assign weights to individual views for all human body joints, based on the estimated distribution of joint distances from each camera. Additionally, we focus on the mesh surface of the human body for dynamic fusion, allowing for the seamless integration of facial expressions and body shape into a unified human body model. Our method has shown excellent performance in reconstructing the human body on two public datasets, advancing beyond previous work from the SMPL model to the SMPL-X model. This extension incorporates more complex hand poses and facial expressions, enhancing the detail and accuracy of the reconstructions. Crucially, it supports the flexible ad-hoc deployment of any number of cameras, offering significant potential for various applications.}
 }
@@ -87,7 +82,6 @@
   abbr={CVPR (highlight)},
   arxiv={2502.20111},
   selected={true},
-  preview={mitracker.png},
   code={https://github.com/XuM007/MITracker},
   html={https://mii-laboratory.github.io/MITracker/},
   abstract={Multi-view object tracking (MVOT) offers promising solutions to challenges such as occlusion and target loss, which are common in traditional single-view tracking. However, progress has been limited by the lack of comprehensive multi-view datasets and effective cross-view integration methods. To overcome these limitations, we compiled a Multi-View object Tracking (MVTrack) dataset of 234K high-quality annotated frames featuring 27 distinct objects across various scenes. In conjunction with this dataset, we introduce a novel MVOT method, Multi-View Integration Tracker (MITracker), to efficiently integrate multi-view object features and provide stable tracking outcomes. MITracker can track any object in video frames of arbitrary length from arbitrary viewpoints. The key advancements of our method over traditional single-view approaches come from two aspects: (1) MITracker transforms 2D image features into a 3D feature volume and compresses it into a bird's eye view (BEV) plane, facilitating inter-view information fusion; (2) we propose an attention mechanism that leverages geometric information from fused 3D feature volume to refine the tracking results at each view. MITracker outperforms existing methods on the MVTrack and GMTD datasets, achieving state-of-the-art performance. }
@@ -102,7 +96,6 @@
   abbr={MICCAI (EA)},
   arxiv={2503.01164},
   selected={true},
-  preview={medlego.png},
   abstract={The adoption of visual foundation models has become a common practice in computer-aided diagnosis (CAD). While these foundation models provide a viable solution for creating generalist medical AI, privacy concerns make it difficult to pre-train or continuously update such models across multiple domains and datasets, leading many studies to focus on specialist models. To address this challenge, we propose Med-LEGO, a training-free framework that enables the seamless integration or updating of a generalist CAD model by combining multiple specialist models, similar to assembling LEGO bricks. Med-LEGO enhances LoRA (low-rank adaptation) by incorporating singular value decomposition (SVD) to efficiently capture the domain expertise of each specialist model with minimal additional parameters. By combining these adapted weights through simple operations, Med-LEGO allows for the easy integration or modification of specific diagnostic capabilities without the need for original data or retraining. Finally, the combined model can be further adapted to new diagnostic tasks, making it a versatile generalist model. Our extensive experiments demonstrate that Med-LEGO outperforms existing methods in both cross-domain and in-domain medical tasks while using only 0.18% of full model parameters. These merged models show better convergence and generalization to new tasks, providing an effective path toward generalist medical AI.}
 }
 
@@ -115,7 +108,6 @@
   abbr={arXiv},
   arxiv={2505.09178},
   selected={true},
-  preview={unicad.png},
   html={https://mii-laboratory.github.io/UniCAD/},
   abstract={The growing complexity and scale of visual model pre-training have made developing and deploying multi-task computer-aided diagnosis (CAD) systems increasingly challenging and resource-intensive. Furthermore, the medical imaging community lacks an open-source CAD platform to enable the rapid creation of efficient and extendable diagnostic models. To address these issues, we propose UniCAD, a unified architecture that leverages the robust capabilities of pre-trained vision foundation models to seamlessly handle both 2D and 3D medical images while requiring only minimal task-specific parameters. UniCAD introduces two key innovations: (1) Efficiency: A low-rank adaptation strategy is employed to adapt a pre-trained visual model to the medical image domain, achieving performance on par with fully fine-tuned counterparts while introducing only 0.17% trainable parameters. (2) Plug-and-Play: A modular architecture that combines a frozen foundation model with multiple plug-and-play experts, enabling diverse tasks and seamless functionality expansion. Building on this unified CAD architecture, we establish an open-source platform where researchers can share and access lightweight CAD experts, fostering a more equitable and efficient research ecosystem. Comprehensive experiments across 12 diverse medical datasets demonstrate that UniCAD consistently outperforms existing methods in both accuracy and deployment efficiency.}
 }
@@ -129,7 +121,6 @@
   abbr={Neural Networks},
   arxiv={2505.14151},
   selected={false},
-  preview={reactdiff.png},
   abstract={Given the audio-visual clip of the speaker, facial reaction generation aims to predict the listener's facial reactions. The challenge lies in capturing the relevance between video and audio while balancing appropriateness, realism, and diversity. While prior works have mostly focused on uni-modal inputs or simplified reaction mappings, recent approaches such as PerFRDiff have explored multi-modal inputs and the one-to-many nature of appropriate reaction mappings. In this work, we propose the Facial Reaction Diffusion (ReactDiff) framework that uniquely integrates a Multi-Modality Transformer with conditional diffusion in the latent space for enhanced reaction generation. Unlike existing methods, ReactDiff leverages intra- and inter-class attention for fine-grained multi-modal interaction, while the latent diffusion process between the encoder and decoder enables diverse yet contextually appropriate outputs. Experimental results demonstrate that ReactDiff significantly outperforms existing approaches, achieving a facial reaction correlation of 0.26 and diversity score of 0.094 while maintaining competitive realism.}
 }
 
