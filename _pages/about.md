@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**Yitao (一涛)** is a Ph.D. student at The HK PolyU, supervised by [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc). He received his M.S. in Computer Science from ShanghaiTech University in 2025, supervised by [Prof. Qian Wang (王乾)](https://qianwang.space/), and his B.S. in Computer Science from the same institution in 2022.
+**Yitao (一涛)** is a Ph.D. student at The HK PolyU, supervised by [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc). He received his M.S. in Computer Science from ShanghaiTech University in 2025, supervised by [Prof. Qian Wang (王乾)](https://qianwang.space/), and his B.S. in Computer Science from the same university in 2022.
 
 Now, he focus on 🧑‍💻
 - Accurate & Reasonable Multimodal Large Language Model.
