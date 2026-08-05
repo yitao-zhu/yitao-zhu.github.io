@@ -1,4 +1,18 @@
 $(document).ready(function () {
+  function updateNewsScrollHeights() {
+    document.querySelectorAll(".news-scrollable").forEach((container) => {
+      const visibleRows = Array.from(container.querySelectorAll("tbody > tr")).slice(0, 3);
+      const visibleHeight = visibleRows.reduce((height, row) => height + row.getBoundingClientRect().height, 0);
+
+      if (visibleHeight > 0) {
+        container.style.setProperty("--news-visible-height", `${Math.ceil(visibleHeight)}px`);
+      }
+    });
+  }
+
+  updateNewsScrollHeights();
+  $(window).on("resize", updateNewsScrollHeights);
+
   // add toggle functionality to abstract, award and bibtex buttons
   $("a.abstract").click(function () {
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");

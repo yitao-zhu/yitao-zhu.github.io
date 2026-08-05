@@ -744,17 +744,44 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {
+      .publication-header {
+        margin-bottom: 0.625rem;
+      }
+
+      .publication-divider {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        width: 100%;
+        margin: 0.25rem 0 1.25rem;
+
+        &::before,
+        &::after {
+          height: 1px;
+          background-color: var(--global-divider-color);
+          content: "";
+        }
+
+        &::before {
+          flex: 0 0 1.5rem;
+        }
+
+        &::after {
+          flex: 1 1 auto;
+        }
       }
 
       .abbr {
-        margin-bottom: 0.5rem;
+        display: inline-block;
+        margin-bottom: 0;
 
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
-          margin-bottom: 0.5rem;
+          margin-bottom: 0;
+          padding: 0.35em 0.65em;
           color: var(--global-card-bg-color) !important;
+          white-space: nowrap;
 
           a {
             color: white;

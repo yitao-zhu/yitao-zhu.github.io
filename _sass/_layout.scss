@@ -40,6 +40,28 @@ body.sticky-bottom-footer {
 
 // TODO: redefine content layout.
 
+.home-section {
+  margin-top: 5rem;
+
+  > h2 {
+    margin-top: 0;
+  }
+}
+
+.news {
+  .table {
+    margin-bottom: 0;
+  }
+
+  .news-scrollable {
+    max-height: var(--news-visible-height, 10rem);
+    border: 1px solid var(--global-divider-color);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/
