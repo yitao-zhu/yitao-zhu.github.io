@@ -1,8 +1,8 @@
 - title: General Information
   type: map_media
-  media: assets/img/Scrounger.gif        # 你的 GIF 路径（站内相对路径或 URL）
+  media: assets/img/Scrounger.gif # 你的 GIF 路径（站内相对路径或 URL）
   media_alt: "Profile animation"
-  media_width: 4                       # 右侧列宽(12栅格制)，可改 3/4/5
+  media_width: 4 # 右侧列宽(12栅格制)，可改 3/4/5
   contents:
     - name: Full Name
       value: Yitao ZHU (朱一涛)
@@ -14,7 +14,7 @@
 - title: Research Interests
   type: list
   contents:
-    - My current research focuses on multimodal large language models (MLLMs) for medical image analysis, leveraging MLLMs to enable more reliable and naturally interactive computer-aided diagnosis (CAD), report generation, and medical image synthesis. 
+    - My current research focuses on multimodal large language models (MLLMs) for medical image analysis, leveraging MLLMs to enable more reliable and naturally interactive computer-aided diagnosis (CAD), report generation, and medical image synthesis.
 
 - title: Education
   type: time_table
@@ -28,7 +28,7 @@
     - title: M.S. in Computer Science
       institution: ShanghaiTech University, Shanghai, China
       year: 2022.09 - 2025.06
-      description: 
+      description:
         - Advised by <a href="https://qianwang.space/">Prof. Qian Wang</a>
         - Research field is medical image ananlysis and computer vision
     - title: B.S. in Computer Science

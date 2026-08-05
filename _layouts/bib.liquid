@@ -48,7 +48,9 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title" style="font-size: 22px; font-family: 'Times New Roman', Times, serif; color: var(--global-theme-color);">{{ entry.title }}</div>
+    <div class="title" style="font-size: 22px; font-family: 'Times New Roman', Times, serif; color: var(--global-theme-color);">
+      {{ entry.title }}
+    </div>
     <div style="margin-bottom: 10px;">
       <!-- 内容1 -->
     </div>
@@ -187,9 +189,10 @@
       <span style="font-style: italic;">
         {{ entrytype }}
       </span>
-      {% if entrytype_text != "" and entryyear != "" %}, {% endif %}
+      {% if entrytype_text != '' and entryyear != '' %}, {% endif %}
       <span style="font-style: normal;">
-        {{ entrymonth }}{{ entryyear }}
+        {{ entrymonth -}}
+        {{- entryyear }}
       </span>
     </div>
 
@@ -371,7 +374,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 

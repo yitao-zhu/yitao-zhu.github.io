@@ -1,14 +1,14 @@
 {%- comment -%}
-渲染左侧为键值(map)，右侧为媒体(GIF/PNG/JPG/SVG)
-需要在 include 时传入 entry（见步骤2）
-可选字段：
-entry.media         媒体路径（站内相对路径或完整 URL）
-entry.media_alt     媒体的 alt 文本
-entry.media_width   右侧媒体列的宽度（Bootstrap 栅格，默认 4）
+  渲染左侧为键值(map)，右侧为媒体(GIF/PNG/JPG/SVG)
+  需要在 include 时传入 entry（见步骤2）
+  可选字段：
+  entry.media         媒体路径（站内相对路径或完整 URL）
+  entry.media_alt     媒体的 alt 文本
+  entry.media_width   右侧媒体列的宽度（Bootstrap 栅格，默认 4）
 {%- endcomment -%}
 
 {%- assign col_media = entry.media_width | default: 4 -%}
-{%- assign col_text  = 12 | minus: col_media -%}
+{%- assign col_text = 12 | minus: col_media -%}
 
 <div class="row no-gutters">
   <div class="col-md-{{ col_text }} pr-md-3">
@@ -21,13 +21,13 @@ entry.media_width   右侧媒体列的宽度（Bootstrap 栅格，默认 4）
   </div>
 
   {%- if entry.media -%}
-  <div class="col-md-{{ col_media }} mt-3 mt-md-0 d-flex justify-content-center align-items-start">
-    <img
-      src="{% if entry.media contains '://' %}{{ entry.media }}{% else %}{{ entry.media | relative_url }}{% endif %}"
-      alt="{{ entry.media_alt | default: entry.title }}"
-      class="img-fluid rounded shadow-sm"
-      style="max-height: 100px; object-fit: contain;"
-    />
-  </div>
+    <div class="col-md-{{ col_media }} mt-3 mt-md-0 d-flex justify-content-center align-items-start">
+      <img
+        src="{% if entry.media contains '://' %}{{ entry.media }}{% else %}{{ entry.media | relative_url }}{% endif %}"
+        alt="{{ entry.media_alt | default: entry.title }}"
+        class="img-fluid rounded shadow-sm"
+        style="max-height: 100px; object-fit: contain;"
+      />
+    </div>
   {%- endif -%}
 </div>

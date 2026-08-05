@@ -7,10 +7,11 @@ layout: default
       {% if site.title == 'blank' %}
         <span class="neon-name">
           <span class="font-weight-bold">{{ site.first_name }}</span>
-          {{ site.middle_name }} {{ site.last_name }}
+          {{ site.middle_name }}
+          {{ site.last_name }}
         </span>
       {% else %}
-          <span class="neon-name">{{ site.title }}</span>
+        <span class="neon-name">{{ site.title }}</span>
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>

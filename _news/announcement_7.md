@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two papers accepted by <i>MICCAI</i> 2026. 
+Two papers accepted by <i>MICCAI</i> 2026.
