@@ -1,7 +1,5 @@
 github_users:
   - AbsterZhu
-repo_description_lines_max: 2
-
 github_repos:
   - xionghonglin/DoctorGLM
   - JamesQFreeman/LoRA-ViT
@@ -9,3 +7,19 @@ github_repos:
   - AbsterZhu/MUC
   - XuM007/MITracker
   - AbsterZhu/UniCAD
+
+repo_descriptions:
+  xionghonglin/DoctorGLM: A Chinese medical consultation model built on ChatGLM-6B.
+  JamesQFreeman/LoRA-ViT: Low-rank adaptation for Vision Transformers.
+  zhaozh10/ChatCAD: Interactive computer-aided diagnosis using large language models.
+  AbsterZhu/MUC: Robust 3D human body reconstruction from uncalibrated cameras.
+  XuM007/MITracker: Multi-view integration for visual object tracking.
+  AbsterZhu/UniCAD: An efficient and extensible multi-task computer-aided diagnosis architecture.
+
+repo_stars:
+  xionghonglin/DoctorGLM: 835
+  JamesQFreeman/LoRA-ViT: 438
+  zhaozh10/ChatCAD: 196
+  AbsterZhu/MUC: 24
+  XuM007/MITracker: 137
+  AbsterZhu/UniCAD: 6

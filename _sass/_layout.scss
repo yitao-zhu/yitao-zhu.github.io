@@ -6,6 +6,18 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 1rem;
+  line-height: 1.72;
+  letter-spacing: -0.006em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 
   h1,
   h2,
@@ -31,6 +43,11 @@ body.sticky-bottom-footer {
   max-width: $max-content-width;
 }
 
+main,
+[role="main"] {
+  min-height: calc(100vh - 12rem);
+}
+
 // Profile
 .profile {
   img {
@@ -41,7 +58,7 @@ body.sticky-bottom-footer {
 // TODO: redefine content layout.
 
 .home-section {
-  margin-top: 5rem;
+  margin-top: clamp(3.75rem, 7vw, 5.5rem);
 
   > h2 {
     margin-top: 0;
@@ -54,11 +71,24 @@ body.sticky-bottom-footer {
   }
 
   .news-scrollable {
-    max-height: var(--news-visible-height, 10rem);
-    border: 1px solid var(--global-divider-color);
+    max-height: var(--news-visible-height, 12rem);
+    border: 0;
+    border-radius: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
     scrollbar-gutter: stable;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body.fixed-top-nav {
+    padding-top: 52px;
+  }
+
+  body > .container[role="main"] {
+    margin-top: 2.25rem !important;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
   }
 }
 

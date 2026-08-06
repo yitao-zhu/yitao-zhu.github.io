@@ -31,12 +31,12 @@
   <div id="{{ entry.key }}" class="col-12">
     <div class="publication-header">
       <!-- Title -->
-      <div class="title" style="font-size: 22px; font-family: 'Times New Roman', Times, serif; color: var(--global-theme-color);">
+      <div class="title">
         {{ entry.title }}
       </div>
     </div>
     <!-- Author -->
-    <div class="author" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+    <div class="author">
       {% assign author_array_size = entry.author_array | size %}
 
       {% assign author_array_limit = author_array_size %}
@@ -166,7 +166,7 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
 
     <!-- Journal Title and Date Styling -->
-    <div class="periodical" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+    <div class="periodical">
       <span style="font-style: italic;">
         {{ entrytype }}
       </span>
@@ -178,7 +178,7 @@
     </div>
 
     <!-- Additional note if any -->
-    <div class="periodical" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+    <div class="periodical">
       {{ entry.note | strip }}
     </div>
 
