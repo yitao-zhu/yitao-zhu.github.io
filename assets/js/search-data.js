@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-repositories",
           title: "Repositories",
-          description: "Open-source implementations and research projects in medical imaging, computer vision, and multimodal AI.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
