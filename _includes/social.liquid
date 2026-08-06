@@ -73,8 +73,23 @@
     {% when 'unsplash_id' %}
       <a href="https://unsplash.com/@{{ social[1] }}" title="Unsplash"><i class="fa-brands fa-unsplash"></i></a>
     {% when 'wechat_qr' %}
-      <a id="WeChatBtn" title="WeChat"><i class="fa-brands fa-weixin"></i></a>
-      <div id="WeChatMod" class="wechat-modal">
+      <a
+        id="WeChatBtn"
+        title="WeChat"
+        role="button"
+        tabindex="0"
+        aria-controls="WeChatMod"
+        aria-expanded="false"
+        ><i class="fa-brands fa-weixin"></i
+      ></a>
+      <div
+        id="WeChatMod"
+        class="wechat-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="WeChat QR code"
+        aria-hidden="true"
+      >
         <img src="{{ social[1] | prepend: 'assets/img/' | relative_url }}" alt="WeChat QR" id="WeChatQR">
       </div>
       <script defer src="{{ '/assets/js/wechat.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
