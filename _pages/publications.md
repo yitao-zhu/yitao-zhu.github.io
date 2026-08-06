@@ -3,6 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description:
+compact_header: true
 nav: true
 nav_order: 2
 ---

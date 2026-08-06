@@ -2,7 +2,8 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: Open-source implementations and research projects in medical imaging, computer vision, and multimodal AI.
+description:
+compact_header: true
 nav: true
 nav_order: 4
 ---

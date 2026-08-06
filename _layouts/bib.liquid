@@ -77,7 +77,7 @@
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}" style="color: inherit; text-decoration: none;">
+            <a class="coauthor-link" href="{{ coauthor_url }}">
               {{- author.first }}
               {{ author_last_html -}}
             </a>

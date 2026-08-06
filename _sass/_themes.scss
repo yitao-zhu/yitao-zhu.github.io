@@ -12,8 +12,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #172033;
   --global-text-color-light: #64748b;
-  --global-theme-color: #2563eb;
-  --global-hover-color: #1d4ed8;
+  --global-theme-color: #0078d4;
+  --global-hover-color: #005a9e;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
@@ -22,10 +22,10 @@
   --global-divider-color: rgba(15, 23, 42, 0.1);
   --global-card-bg-color: #ffffff;
   --global-nav-bg-color: rgba(248, 250, 252, 0.86);
-  --global-focus-ring-color: rgba(37, 99, 235, 0.28);
+  --global-focus-ring-color: rgba(0, 120, 212, 0.28);
   --global-soft-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
   --global-image-shadow: 0 8px 24px rgba(15, 23, 42, 0.09);
-  --global-highlight-color: #{$red-color-dark};
+  --global-highlight-color: #0078d4;
   --global-back-to-top-bg-color: rgba(
     #{color.channel($black-color, "red", $space: rgb)},
     #{color.channel($black-color, "green", $space: rgb)},
@@ -84,23 +84,23 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #0f1218;
-  --global-surface-color: #161b23;
-  --global-surface-soft-color: #1c2330;
+  --global-bg-color: #1c1c1d;
+  --global-surface-color: #242425;
+  --global-surface-soft-color: #2d2d2f;
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #e5eaf2;
-  --global-text-color-light: #99a5b7;
-  --global-theme-color: #7aa2ff;
-  --global-hover-color: #a8c0ff;
+  --global-text-color: #f3f3f3;
+  --global-text-color-light: #b4b4b4;
+  --global-theme-color: #0078d4;
+  --global-hover-color: #2b88d8;
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-footer-bg-color: #1c1c1d;
+  --global-footer-text-color: #b4b4b4;
+  --global-footer-link-color: #f3f3f3;
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: rgba(226, 232, 240, 0.12);
-  --global-card-bg-color: #161b23;
-  --global-nav-bg-color: rgba(15, 18, 24, 0.86);
-  --global-focus-ring-color: rgba(122, 162, 255, 0.34);
+  --global-divider-color: rgba(255, 255, 255, 0.12);
+  --global-card-bg-color: #242425;
+  --global-nav-bg-color: rgba(28, 28, 29, 0.88);
+  --global-focus-ring-color: rgba(0, 120, 212, 0.38);
   --global-soft-shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
   --global-image-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
   --global-back-to-top-bg-color: rgba(
