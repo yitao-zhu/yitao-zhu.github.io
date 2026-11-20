@@ -2,9 +2,10 @@
 layout: about
 title: Home
 permalink: /
-subtitle:
+subtitle: Ph.D. student · The Hong Kong Polytechnic University
 
 profile:
+  alt: Animated illustration of a character standing beside a rabbit
   align: right
   image: Animal_Friend.gif
   image_circular: false # crops the image to make it circular
@@ -15,8 +16,8 @@ social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: # leave blank to include all the news in the `_news` folder
+  scrollable: false
+  limit: 3
 
 latest_posts:
   enabled: false
@@ -24,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**Yitao (一涛)** is a Ph.D. student at The HK PolyU, supervised by [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc). He received his M.S. in Computer Science from ShanghaiTech University in 2025, supervised by [Prof. Qian Wang (王乾)](https://qianwang.space/), and his B.S. in Computer Science from the same university in 2022.
+**Yitao (一涛)** is supervised by [Prof. Anqi Qiu (仇安琪)](https://www.polyu.edu.hk/mhrc/people/mhrc-people/prof-qiu-anqi/?sc_lang=tc). He received his M.S. in Computer Science from ShanghaiTech University in 2025, supervised by [Prof. Qian Wang (王乾)](https://qianwang.space/), and his B.S. in Computer Science from the same university in 2022.
 
 His research centers on building trustworthy and generalizable AI systems that can understand multimodal medical data, reason over visual and clinical evidence, and adapt efficiently across domains. His current interests include:
 

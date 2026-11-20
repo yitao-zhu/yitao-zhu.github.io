@@ -58,10 +58,51 @@ main,
 // TODO: redefine content layout.
 
 .home-section {
-  margin-top: clamp(3.75rem, 7vw, 5.5rem);
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
 
   > h2 {
     margin-top: 0;
+  }
+}
+
+.home-section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  h2 {
+    margin: 0;
+  }
+
+  a {
+    font-size: 0.875rem;
+    white-space: nowrap;
+
+    span {
+      color: inherit;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home-section .publications ol.bibliography > li {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    align-items: baseline;
+    column-gap: 1.5rem;
+
+    > .row {
+      grid-column: 2;
+      margin: 0;
+
+      > .col-12 {
+        padding: 0;
+      }
+    }
   }
 }
 

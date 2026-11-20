@@ -2,53 +2,39 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="neon-name">
-          <span class="font-weight-bold">{{ site.first_name }}</span>
-          {{ site.middle_name }}
-          <span class="font-weight-light">{{ site.last_name }}</span>
-        </span>
-      {% else %}
-        <span class="neon-name">{{ site.title }}</span>
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+    <section class="intro-card{% if page.profile.image %} has-portrait{% endif %}{% if page.profile.align == 'left' %} portrait-left{% endif %}">
+      <header class="intro-heading">
+        <h1 class="post-title">
+          {% if site.title == 'blank' %}
+            {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {{ site.title }}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+        </h1>
+        {% if page.subtitle %}<p class="desc">{{ page.subtitle }}</p>{% endif %}
+      </header>
+      {% if page.profile.image %}
+        <div class="intro-portrait">
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          <img src="{{ profile_image_path | relative_url }}" alt="{{ page.profile.alt | escape }}"{% if page.profile.image_circular %} class="rounded-circle"{% endif %}>
+        </div>
+      {% endif %}
+      <div class="intro-bio">
+        {{ content }}
+        {% if page.profile.more_info %}<div class="more-info">{{ page.profile.more_info }}</div>{% endif %}
       </div>
-    {% endif %}
-
-    <div class="clearfix">{{ content }}</div>
+    </section>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="home-section">
+        <div class="home-section-heading">
+          <h2>News</h2>
+          <a href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a>
+        </div>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
@@ -64,9 +50,10 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <section class="home-section">
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
-        </h2>
+        <div class="home-section-heading">
+          <h2>Selected Publications</h2>
+          <a href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+        </div>
         {% include selected_papers.liquid %}
       </section>
     {% endif %}

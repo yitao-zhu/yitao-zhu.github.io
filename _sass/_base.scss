@@ -272,17 +272,79 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.post > article > .profile {
-  margin-bottom: 1.5rem;
+.intro-card {
+  display: grid;
+  grid-template-areas: "heading" "bio";
+  padding: clamp(1.35rem, 4.5vw, 3.25rem);
+  border: 1px solid var(--global-divider-color);
+  border-radius: clamp(12px, 2vw, 18px);
+  background: var(--global-surface-color);
 
-  figure {
-    margin: 0;
+  &.has-portrait {
+    grid-template-columns: minmax(0, 1fr) minmax(7rem, 18%);
+    grid-template-areas: "heading portrait" "bio portrait";
+    column-gap: clamp(1.5rem, 4vw, 3rem);
   }
 
+  &.has-portrait.portrait-left {
+    grid-template-columns: minmax(7rem, 18%) minmax(0, 1fr);
+    grid-template-areas: "portrait heading" "portrait bio";
+  }
+}
+
+.intro-heading {
+  grid-area: heading;
+  align-self: center;
+  margin-bottom: 1.5rem;
+
+  .desc {
+    margin: 0.45rem 0 0;
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+}
+
+.intro-bio {
+  grid-area: bio;
+  min-width: 0;
+  max-width: 68ch;
+
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  li::marker {
+    color: var(--global-theme-color);
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.intro-portrait {
+  grid-area: portrait;
+  align-self: center;
+
   img {
-    border: 1px solid var(--global-divider-color);
-    border-radius: 0 !important;
-    box-shadow: var(--global-image-shadow) !important;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .intro-card.has-portrait,
+  .intro-card.has-portrait.portrait-left {
+    grid-template-columns: minmax(0, 1fr) clamp(3.25rem, 14vw, 5rem);
+    grid-template-areas: "heading portrait" "bio bio";
+    gap: 1rem;
+  }
+
+  .intro-heading {
+    margin: 0;
   }
 }
 
@@ -303,12 +365,9 @@ ul.task-list input[type="checkbox"] {
 // Navbar customization
 
 .navbar {
-  box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-nav-bg-color);
-  opacity: 1;
-  backdrop-filter: saturate(150%) blur(16px);
-  -webkit-backdrop-filter: saturate(150%) blur(16px);
+  background-color: var(--global-surface-color);
+  box-shadow: none;
 
   > .container {
     min-height: 3.35rem;
@@ -970,12 +1029,6 @@ footer.sticky-bottom {
 @media (max-width: 575.98px) {
   .post-title {
     font-size: 2.45rem;
-  }
-
-  .post > article > .profile {
-    float: none !important;
-    width: min(12rem, 58vw);
-    margin: 0 0 2rem !important;
   }
 
   .news .table {
