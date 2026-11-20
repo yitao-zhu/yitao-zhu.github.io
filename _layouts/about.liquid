@@ -7,22 +7,34 @@ layout: default
       <header class="intro-heading">
         <h1 class="post-title">
           {% if site.title == 'blank' %}
-            {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+            {{ site.first_name }}
+            {{ site.middle_name }}
+            {{ site.last_name }}
           {% else %}
             {{ site.title }}
           {% endif %}
         </h1>
-        {% if page.subtitle %}<p class="desc">{{ page.subtitle }}</p>{% endif %}
+        {% if page.subtitle %}
+          <p class="desc">{{ page.subtitle }}</p>
+        {% endif %}
       </header>
       {% if page.profile.image %}
         <div class="intro-portrait">
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          <img src="{{ profile_image_path | relative_url }}" alt="{{ page.profile.alt | escape }}"{% if page.profile.image_circular %} class="rounded-circle"{% endif %}>
+          <img
+            src="{{ profile_image_path | relative_url }}"
+            alt="{{ page.profile.alt | escape }}"
+            {% if page.profile.image_circular %}
+              class="rounded-circle"
+            {% endif %}
+          >
         </div>
       {% endif %}
       <div class="intro-bio">
         {{ content }}
-        {% if page.profile.more_info %}<div class="more-info">{{ page.profile.more_info }}</div>{% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
       </div>
     </section>
 
